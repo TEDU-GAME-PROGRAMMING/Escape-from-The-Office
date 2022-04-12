@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class LevelSelectionSceneHandler : MonoBehaviour
 {
     public List<GameObject> LevelButtons;
-    
+
+    public List<Level> Levels;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,8 +33,8 @@ public class LevelSelectionSceneHandler : MonoBehaviour
     }
     public void LoadSelectedLevelScene(int selectedLevel)
     {
-        FindObjectOfType<LevelSelectionPassParameter>().SelectedLevel = selectedLevel;
-        //TODO LEVEL objesi oluşturulduğunda selectedLevel int yerine Level olacak
+        FindObjectOfType<LevelSelectionPassParameter>().SelectedLevel = Levels[selectedLevel];
+ 
         
         
         SceneManager.LoadScene("GameplayScene");
