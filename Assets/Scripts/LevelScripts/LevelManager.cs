@@ -45,7 +45,7 @@ public class LevelManager : MonoBehaviour
         LevelObject levelRootObject = ScriptableObject.CreateInstance<LevelObject>();
         levelRootObject.Prefab = ParentLevelObject.gameObject;
         levelRootObject.children = new List<LevelObject>();
-        Debug.Log("ALO");
+       
         foreach (Transform child in ParentLevelObject.transform)
         {
             SaveLevelToFile(ref levelRootObject, child.gameObject, ref levelObjectsPath);

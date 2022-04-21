@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelSelectionSceneHandler : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class LevelSelectionSceneHandler : MonoBehaviour
         {
             if (i <= PlayerPrefsManager.getUnlockedLevel())
             {
+                LevelButtons[i].GetComponent<Button>().interactable = true;
                 LevelButtons[i].transform.GetChild(0).gameObject.SetActive(true);
                 LevelButtons[i].transform.GetChild(1).gameObject.SetActive(false);
             }
@@ -22,6 +24,7 @@ public class LevelSelectionSceneHandler : MonoBehaviour
             {
                 LevelButtons[i].transform.GetChild(0).gameObject.SetActive(false);
                 LevelButtons[i].transform.GetChild(1).gameObject.SetActive(true);
+                LevelButtons[i].GetComponent<Button>().interactable = false;
             }
         }
     }
