@@ -19,9 +19,11 @@ public class LevelSceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        curLevel = levelManager.CurLevel;
+        curLevel = FindObjectOfType<LevelSelectionPassParameter>().SelectedLevel;
+        
         timeToPass = curLevel.TimeToPass;
-
+        
+        Debug.Log(curLevel.name + " " + curLevel.TimeToPass);
         time.text = (int)(timeToPass / 60) + ":" + (int)(timeToPass % 60);
     }
 
@@ -35,8 +37,12 @@ public class LevelSceneManager : MonoBehaviour
     {
         timeToPass -= Time.deltaTime;
         time.text = (int)(timeToPass / 60) + ":" + (int)(timeToPass % 60);
+        if (timeToPass <= 0)
+        {
+            //TODO IF TIME IS OVER EXPLODE BOMBS AND FINISH GAME
+        }
         
-        //TODO IF TIME IS OVER EXPLODE BOMBS AND FINISH GAME
+       
     }
     public void HandleLose(int loseType)
     {
@@ -52,6 +58,8 @@ public class LevelSceneManager : MonoBehaviour
     }
     public void HandleWin()
     {
+        int unlockedLevel = curLevel.ID + 1;
+        PlayerPrefsManager.setUnlockedLevel(unlockedLevel);
         WinPanel.SetActive(true);
     }
 

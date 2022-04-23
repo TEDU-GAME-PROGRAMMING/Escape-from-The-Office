@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Level Test 2
   Description: 
-  Image: {fileID: 0}
+  TimeToPass: 120
   LevelObject: {fileID: 11400000, guid: bb1d4a1f852dbb6428b18ccf7cbe5f48, type: 2}
