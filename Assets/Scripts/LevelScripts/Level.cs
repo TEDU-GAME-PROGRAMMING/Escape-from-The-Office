@@ -6,6 +6,6 @@ public class Level : ScriptableObject
 {
     public string Name;
     public string Description;
-    public Sprite Image;
+    public float TimeToPass;
     public LevelObject LevelObject;
 }
