@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1b76b0f-be12-463b-bc4f-d26adcca8061" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/Assets/Bakery/ftGlobalStorage.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bakery/ftGlobalStorage.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Images/UISprites/Close BTN.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UISprites/Close BTN.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Images/UISprites/Down Arrow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Images/UISprites/Down Arrow.png.meta" afterDir="false" />
@@ -26,6 +27,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
@@ -46,11 +48,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScripts/LifeSituation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/TrapAudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelScripts/LevelSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScripts/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
+
   </component>
   <component name="ProjectId" id="26t3QLS0uIzfQe6rPCr1DMCq4Sd" />
   <component name="ProjectViewState">
@@ -99,11 +103,13 @@
       <workItem from="1648325554957" duration="40000" />
       <workItem from="1649782638513" duration="6388000" />
       <workItem from="1649844551000" duration="2387000" />
+
       <workItem from="1650542200906" duration="1107000" />
       <workItem from="1650633377022" duration="2951000" />
       <workItem from="1650646480428" duration="5824000" />
       <workItem from="1650730668988" duration="378000" />
       <workItem from="1650742271998" duration="102000" />
+
     </task>
     <servers />
   </component>
