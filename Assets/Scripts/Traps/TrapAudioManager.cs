@@ -8,7 +8,7 @@ public class TrapAudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObject.GetComponent<AudioSource>().volume = PlayerPrefsManager.getSound();
     }
 
     // Update is called once per frame

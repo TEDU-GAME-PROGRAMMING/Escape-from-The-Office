@@ -37,7 +37,7 @@ public class LevelSelectionSceneHandler : MonoBehaviour
     public void LoadSelectedLevelScene(int selectedLevel)
     {
         FindObjectOfType<LevelSelectionPassParameter>().SelectedLevel = Levels[selectedLevel];
- 
+     
         
         
         SceneManager.LoadScene("GameplayScene");
