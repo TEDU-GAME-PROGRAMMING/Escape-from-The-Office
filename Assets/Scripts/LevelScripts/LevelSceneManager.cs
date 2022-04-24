@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelSceneManager : MonoBehaviour
 {
     public GameObject WinPanel;
     public GameObject LosePanel;
     public GameObject PausePanel;
-
+    public GameObject PauseButton;
     public TextMeshProUGUI time;
 
     public LevelManager levelManager;
@@ -16,6 +17,8 @@ public class LevelSceneManager : MonoBehaviour
     public Level curLevel;
 
     public float timeToPass;
+    public List<Level> Levels;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +49,7 @@ public class LevelSceneManager : MonoBehaviour
     }
     public void HandleLose(int loseType)
     {
+        PauseButton.SetActive(false);
         if (loseType == 0)
         {
             //TODO Lose because of traps
@@ -58,6 +62,7 @@ public class LevelSceneManager : MonoBehaviour
     }
     public void HandleWin()
     {
+        PauseButton.SetActive(false);
         int unlockedLevel = curLevel.ID + 1;
         PlayerPrefsManager.setUnlockedLevel(unlockedLevel);
         WinPanel.SetActive(true);
@@ -74,5 +79,40 @@ public class LevelSceneManager : MonoBehaviour
     {
         Time.timeScale = 1;
         PausePanel.SetActive(false);
+    }
+
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenuScene");
+    }
+    public void LoadSettings()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("SettingsScene");
+    }
+    public void LoadLevelSelectionScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("LevelSelectionScene");
+    }
+    public void LoadNextLevel()
+    {
+        if (curLevel.ID + 1 < Levels.Count)
+        {
+            FindObjectOfType<LevelSelectionPassParameter>().SelectedLevel = Levels[curLevel.ID+1];
+            SceneManager.LoadScene("GameplayScene");
+        }
+        else
+        {
+            SceneManager.LoadScene("EndGameScene");
+        }
+       
+
+       
+    }
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("GameplayScene");
     }
 }
