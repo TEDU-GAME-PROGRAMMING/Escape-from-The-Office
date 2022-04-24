@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameplaySceneHandler : MonoBehaviour
 {
@@ -16,5 +17,9 @@ public class GameplaySceneHandler : MonoBehaviour
     void Update()
     {
         
+    }
+    public void LoadLevelSelectionScene()
+    {
+        SceneManager.LoadScene("LevelSelectionScene");
     }
 }

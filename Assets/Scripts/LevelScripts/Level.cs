@@ -5,7 +5,8 @@ using UnityEngine;
 public class Level : ScriptableObject
 {
     public string Name;
+    public int ID;
     public string Description;
-    public Sprite Image;
+    public float TimeToPass;
     public LevelObject LevelObject;
 }

@@ -17,7 +17,7 @@ public class PlayerPrefsManager : MonoBehaviour
 
     private const string MASTER_UNLOCKED_LEVEL_KEY = "UnlockedLevelKey";
     const int MIN_UNLOCKEDLEVEL = 0;
-    const int MAX_UNLOCKEDLEVEL = 6;
+    const int MAX_UNLOCKEDLEVEL = 3;
     const int DEFAULT_UNLOCKEDLEVEL = 1;
     public static float getSound()
     {
@@ -77,16 +77,18 @@ public class PlayerPrefsManager : MonoBehaviour
     }
     public static void setUnlockedLevel(int unlockedLevel)
     {
-        if(unlockedLevel >= MIN_UNLOCKEDLEVEL && unlockedLevel <= MAX_UNLOCKEDLEVEL)
+        int lastUnlockedLevel = getUnlockedLevel();
+        if(unlockedLevel >= MIN_UNLOCKEDLEVEL && unlockedLevel <= MAX_UNLOCKEDLEVEL && unlockedLevel > lastUnlockedLevel)
         {
             PlayerPrefs.SetInt(MASTER_UNLOCKED_LEVEL_KEY, unlockedLevel);
         }
         else
         {
-            Debug.LogError("MASTER GRAPH IS OUT OF RANGE");
+            Debug.LogError("MASTER UNLOCKED LEVEL IS OUT OF RANGE");
         }
         
     }
+    
     
     
     public static void setDefault()

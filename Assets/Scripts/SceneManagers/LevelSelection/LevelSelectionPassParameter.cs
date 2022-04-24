@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelSelectionPassParameter : MonoBehaviour
 {
     [SerializeField] public Level SelectedLevel { get; set; }
+  
     private static LevelSelectionPassParameter instance = null;
     void Awake()
     {

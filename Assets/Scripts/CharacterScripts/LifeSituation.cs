@@ -1,0 +1,5 @@
+enum LifeSituation
+{
+    Alive,
+    Death
+};
