@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c1b76b0f-be12-463b-bc4f-d26adcca8061" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameplayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameplayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/LevelSceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelScripts/LevelSceneManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +84,7 @@
       <workItem from="1650742271998" duration="102000" />
       <workItem from="1650745527436" duration="646000" />
       <workItem from="1650805627400" duration="4462000" />
+      <workItem from="1650997773983" duration="1599000" />
     </task>
     <servers />
   </component>
