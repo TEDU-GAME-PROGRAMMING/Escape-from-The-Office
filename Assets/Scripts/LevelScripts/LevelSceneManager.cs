@@ -49,6 +49,7 @@ public class LevelSceneManager : MonoBehaviour
     }
     public void HandleLose(int loseType)
     {
+        Time.timeScale = 0;
         PauseButton.SetActive(false);
         if (loseType == 0)
         {
@@ -62,6 +63,7 @@ public class LevelSceneManager : MonoBehaviour
     }
     public void HandleWin()
     {
+        Time.timeScale = 0;
         PauseButton.SetActive(false);
         int unlockedLevel = curLevel.ID + 1;
         PlayerPrefsManager.setUnlockedLevel(unlockedLevel);
