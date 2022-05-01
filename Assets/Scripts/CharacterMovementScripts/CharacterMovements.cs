@@ -57,10 +57,8 @@ public class CharacterMovements : MonoBehaviour
         MovementDirection = new Vector3(HorizontalInput/2, rb.velocity.y, VerticalInput);
         
         MovementDirection = transform.TransformDirection(MovementDirection);
-        if (isGrounded )
-        {
-            rb.velocity = MovementDirection;           
-        }
+        rb.velocity = MovementDirection;           
+      
         
         //Jump
         if (isJumped && isGrounded)
@@ -74,26 +72,5 @@ public class CharacterMovements : MonoBehaviour
         //Mouse rotation
         transform.Rotate(new Vector3(0,MouseX,0));
     }
-
-
-    private void OnCollisionStay(Collision other)
-    {
-        
-        //If collided object is Ground, then isGrounded is True.
-        //Ground Checker Part of the character is entered the ground when it is landed after jump.
-        if (other.gameObject.CompareTag("Ground") )
-        {
-            isGrounded = true;
-
-        }
-    }
-
-    private void OnCollisionExit(Collision other)
-    {
-        if (other.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-
-        }
-    }
+    
 }
