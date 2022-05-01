@@ -32,7 +32,8 @@ public class LevelManagerEditor : Editor
             string path = EditorUtility.OpenFilePanel("Select asset", FindObjectOfType<LevelManager>().LEVEL_SAVE_PATH, "asset");
             if (path.Length != 0)
             {
-                string newPath = path.Split(new string[] { "warsky/" }, StringSplitOptions.None)[1];
+                string newPath = path.Split(new string[] { "Escape-from-The-Office/" }, StringSplitOptions.None)[1];
+
                 Level level = AssetDatabase.LoadAssetAtPath<Level>(newPath);
 
                 if (level != null)
