@@ -13,21 +13,28 @@ public class DoorHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        OpeningDoor();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            OpeningDoor();
+        }
     }
 
-    public void OpenKeyDoor()
+    public void OpenKeyDoor(string KeyColor)
     {
         if (doorType == DoorType.Key)
         {
+            if (KeyColor.Equals(DoorColor))
+            {
+                OpeningDoor();
+            }
             //If player has a right key, open.
-            OpeningDoor();
+            
         }
     }
     public void OpenPasswordDoor()
@@ -66,6 +73,9 @@ public class DoorHandler : MonoBehaviour
 
     public void OpeningDoor()
     {
+        
         Door.transform.RotateAround(Hinge.position,new Vector3(0,1,0),-90f);
+        
+        
     }
 }

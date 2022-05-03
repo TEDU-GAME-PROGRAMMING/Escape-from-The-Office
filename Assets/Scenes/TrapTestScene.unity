@@ -618,7 +618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392766649}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 3, z: -5.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1172,6 +1172,10 @@ PrefabInstance:
     - target: {fileID: 4066373788593979594, guid: a35fd3457e8273941aca810718625f07, type: 3}
       propertyPath: m_Name
       value: BrokableDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066373788593979594, guid: a35fd3457e8273941aca810718625f07, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a35fd3457e8273941aca810718625f07, type: 3}
