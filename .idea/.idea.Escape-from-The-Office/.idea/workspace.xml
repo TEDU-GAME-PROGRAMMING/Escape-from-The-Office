@@ -4,7 +4,6 @@
     <list default="true" id="c1b76b0f-be12-463b-bc4f-d26adcca8061" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrapTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TrapTestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorScripts/DoorHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorScripts/DoorHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +88,7 @@
       <workItem from="1651414374774" duration="1351000" />
       <workItem from="1651576336730" duration="1126000" />
       <workItem from="1651593045006" duration="2688000" />
+      <workItem from="1651917344643" duration="1008000" />
     </task>
     <servers />
   </component>
@@ -112,5 +112,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Traps/MovingLaser.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Users\egeme\Desktop\projects\Escape-from-The-Office\Assets\Scripts\Traps\MovingLaser.cs" initialLine="21" containingFunctionPresentation="method 'Update'">
+            <startOffsets>
+              <option value="483" />
+            </startOffsets>
+            <endOffsets>
+              <option value="619" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
