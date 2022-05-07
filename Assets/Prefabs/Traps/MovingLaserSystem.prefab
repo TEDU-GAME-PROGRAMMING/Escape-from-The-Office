@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3777907332324754547}
-  - component: {fileID: 3777907332324754544}
+  - component: {fileID: 718433360837051810}
   m_Layer: 0
   m_Name: MovingLaserSystem
   m_TagString: Untagged
@@ -95,7 +95,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3777907332324754544
+--- !u!114 &718433360837051810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,10 +104,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3777907332324754545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11b2bf833c0630244bd8a77f83a07496, type: 3}
+  m_Script: {fileID: 11500000, guid: 208814b1ed39f3c43872f96e8173653a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LaserObj: {fileID: 2006362508700081451}
+  TrapObj: {fileID: 2006362508700081451}
   checkpointPositions:
   - {fileID: 3777907331184051305}
   - {fileID: 3777907332910793489}
