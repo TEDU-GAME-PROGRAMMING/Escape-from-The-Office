@@ -46,8 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 208814b1ed39f3c43872f96e8173653a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TrapObj: {fileID: 0}
-  checkpointPositions: []
+  TrapObj: {fileID: 6680407523309364701}
+  checkpointPositions:
+  - {fileID: 6680407524275533744}
+  - {fileID: 6680407524742324104}
+  speed: 1
   ind: 1
 --- !u!1 &6680407524275533747
 GameObject:
@@ -128,6 +131,7 @@ MonoBehaviour:
   checkpointPositions:
   - {fileID: 6680407524275533744}
   - {fileID: 6680407524742324104}
+  speed: 0.5
   ind: 1
 --- !u!1 &6680407524742324107
 GameObject:

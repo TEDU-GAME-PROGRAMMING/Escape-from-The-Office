@@ -111,6 +111,7 @@ MonoBehaviour:
   checkpointPositions:
   - {fileID: 3777907331184051305}
   - {fileID: 3777907332910793489}
+  speed: 1
   ind: 1
 --- !u!1 &3777907332910793494
 GameObject:
@@ -152,6 +153,10 @@ PrefabInstance:
     - target: {fileID: 880739271, guid: 5641ecf30b1f3ac42a31643a5715fc42, type: 3}
       propertyPath: audioSource
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3437292131257390407, guid: 5641ecf30b1f3ac42a31643a5715fc42, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3437894278451205375, guid: 5641ecf30b1f3ac42a31643a5715fc42, type: 3}
       propertyPath: m_Name

@@ -13,7 +13,7 @@ public class LevelSceneManager : MonoBehaviour
     public TextMeshProUGUI time;
 
     public LevelManager levelManager;
-
+    public bool levelFailed = false;
     public Level curLevel;
 
     public float timeToPass;
@@ -33,7 +33,11 @@ public class LevelSceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TimeHandle();
+        if (!levelFailed)
+        {
+            TimeHandle();
+        }
+        
     }
 
     public void TimeHandle()
@@ -42,11 +46,19 @@ public class LevelSceneManager : MonoBehaviour
         time.text = (int)(timeToPass / 60) + ":" + (int)(timeToPass % 60);
         if (timeToPass <= 0)
         {
-            //TODO IF TIME IS OVER EXPLODE BOMBS AND FINISH GAME
+            levelFailed = true;
+            FindObjectOfType<TrapAudioManager>().PlayEffect(0);//0:BOMB 1:BLADE 2:SPIKE 3:LASER
+            WaitForSound();
+            HandleLose(0);
         }
         
        
     }
+    IEnumerator WaitForSound()
+    {
+        yield return new WaitForSeconds(2);
+    }
+    
     public void HandleLose(int loseType)
     {
         Time.timeScale = 0;
@@ -57,10 +69,11 @@ public class LevelSceneManager : MonoBehaviour
         }
         else if (loseType == 1)
         {
-            //TODO time has ended and bombs are exploded
+           
         }
         LosePanel.SetActive(true);
     }
+   
     public void HandleWin()
     {
         Time.timeScale = 0;
@@ -100,6 +113,7 @@ public class LevelSceneManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
+        Time.timeScale = 1;
         if (curLevel.ID + 1 < Levels.Count)
         {
             FindObjectOfType<LevelSelectionPassParameter>().SelectedLevel = Levels[curLevel.ID+1];
@@ -115,6 +129,7 @@ public class LevelSceneManager : MonoBehaviour
     }
     public void PlayAgain()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("GameplayScene");
     }
 }
