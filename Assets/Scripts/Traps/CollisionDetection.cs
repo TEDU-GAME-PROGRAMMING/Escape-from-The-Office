@@ -6,7 +6,12 @@ public class CollisionDetection : MonoBehaviour
 {
     [SerializeField] private TrapType trapType;
     [SerializeField] private GameObject audioSource;
-    
+
+    private void Start()
+    {
+        audioSource = FindObjectOfType<AudioSource>().gameObject;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);

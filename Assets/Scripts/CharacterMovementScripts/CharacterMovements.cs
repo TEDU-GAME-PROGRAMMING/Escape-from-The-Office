@@ -17,12 +17,48 @@ public class CharacterMovements : MonoBehaviour
     public float JumpForce = 5000f;
     public float MouseSensivity = 5f;
     public Vector3 MovementDirection = Vector3.zero;
+
+    //**************************************************************************
+    //**************************************************************************
+    [Header("Movement for Sprint")]
+    public float walkSpeed = 3.0f;
+    public float sprintSpeed = 6.0f;
+
+    [Header("Movement for Crounch")]
+    public float crouchSpeed = 1.5f;  
+    public float crouchYScale;
+    private float startYScale;
+
+    [Header("Keybindings for Sprint and Crounching")]
+    public KeyCode sprintKey = KeyCode.LeftShift;
+    public KeyCode crouchKey = KeyCode.LeftControl;
+
+    public MovementState state;
+    public enum MovementState
+    {
+        walking,
+        sprinting,
+        crouching,
+    }
+    //**************************************************************************
+    //**************************************************************************
+
     
     [Header("Inputs")]
     public float HorizontalInput;
     public float VerticalInput;
     public float MouseX;
     public float MouseY;
+
+
+    //**************************************************************************
+    //**************************************************************************
+    private void Start(){
+
+        startYScale = transform.localScale.y;
+    }
+    //**************************************************************************
+    //**************************************************************************
 
     void Update()
     {
@@ -39,12 +75,30 @@ public class CharacterMovements : MonoBehaviour
         }
         MouseX = Input.GetAxis("Mouse X") * MouseSensivity;
         MouseY = -Input.GetAxis("Mouse Y") * MouseSensivity;
+
+        //**************************************************************************
+        //**************************************************************************
+         // start crouch
+        if (Input.GetKeyDown(crouchKey))
+        {
+            transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
+            rb.AddForce(Vector3.down * 2f, ForceMode.Impulse);
+        }
+
+        // stop crouch
+        if (Input.GetKeyUp(crouchKey))
+        {
+            transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
+        }
+        //**************************************************************************
+        //**************************************************************************
     }
     void FixedUpdate()
     {
         if (isPlayerEnable)
         {
             HandleInputs();
+            StateHandler();
         }
         
     }
@@ -67,10 +121,41 @@ public class CharacterMovements : MonoBehaviour
             isJumped = false;
             rb.AddForce(new Vector3(0,JumpForce,0));
         }
-        
+        //MouseX = Mathf.Clamp(MouseX,-90f,90f);
+        //MouseY = Mathf.Clamp(MouseY,-90f,90f);
         
         //Mouse rotation
         transform.Rotate(new Vector3(0,MouseX,0));
     }
+
+    
+         //**************************************************************************
+        //**************************************************************************
+    private void StateHandler()
+    {
+        // Mode - Crouching
+        if (Input.GetKey(crouchKey))
+        {
+            state = MovementState.crouching;
+            Speed = crouchSpeed;
+        }
+
+        // Mode - Sprinting
+        else if(isGrounded && Input.GetKey(sprintKey))
+        {
+            state = MovementState.sprinting;
+            Speed = sprintSpeed;
+        }
+
+        // Mode - Walking
+        else if (isGrounded)
+        {
+            state = MovementState.walking;
+            Speed = walkSpeed;
+        }
+
+    }
+        //**************************************************************************
+        //**************************************************************************
     
 }
