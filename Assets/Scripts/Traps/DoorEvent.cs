@@ -1,4 +1,4 @@
-enum DoorType
+enum DoorEvent
 {
     Fixed, 
     Timed
