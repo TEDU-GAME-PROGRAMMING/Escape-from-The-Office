@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoorHandler : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class DoorHandler : MonoBehaviour
     public GameObject Door;
 
     public Transform Hinge;
+    [SerializeField]private Text Answer;
+   private string Ans = "1234";
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +20,7 @@ public class DoorHandler : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -77,5 +80,18 @@ public class DoorHandler : MonoBehaviour
         Door.transform.RotateAround(Hinge.position,new Vector3(0,1,0),-90f);
         
         
+    }
+
+    public void Number(int number){
+        Answer.text  += number.ToString();
+    }
+
+    public void Enter(){
+        if(Answer.text == Ans){
+                Answer.text = "Correct";
+        }
+        else{
+            Answer.text = "Incorrect";
+        }
     }
 }
