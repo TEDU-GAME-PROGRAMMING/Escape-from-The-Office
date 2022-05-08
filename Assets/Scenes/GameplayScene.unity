@@ -1212,6 +1212,10 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 5538453600655370583, guid: 326658e22c7f6e84e8106b1c2e7eb529, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5538453600655370584, guid: 326658e22c7f6e84e8106b1c2e7eb529, type: 3}
       propertyPath: m_RootOrder
       value: 0

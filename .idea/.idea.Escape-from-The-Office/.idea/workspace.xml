@@ -3,32 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="c1b76b0f-be12-463b-bc4f-d26adcca8061" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Demo.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Demo.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Demo.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Demo.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/AudioManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/AudioManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/AudioManager.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/AudioManager.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Doors.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Doors.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Doors.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Doors.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Floor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Floor.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Floor.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Floor.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/LevelEndElevator.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/LevelEndElevator.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/LevelEndElevator.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/LevelEndElevator.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/AudioManager.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Doors.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Doors.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Floor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/LevelEndElevator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/LevelEndElevator.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Traps.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Traps.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Walls.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Walls.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Traps.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Traps.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Traps.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Traps.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Walls.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Walls.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Walls.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Walls.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/AudioManager(Clone).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/AudioManager(Clone).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/AudioManager(Clone).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/AudioManager(Clone).asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Doors(Clone).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Doors(Clone).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Doors(Clone).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Doors(Clone).asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Floor(Clone).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Floor(Clone).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Floor(Clone).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Floor(Clone).asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/LevelEndElevator(Clone).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/LevelEndElevator(Clone).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/LevelEndElevator(Clone).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/LevelEndElevator(Clone).asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/AudioManager(Clone).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/AudioManager(Clone).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Doors(Clone).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Doors(Clone).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Floor(Clone).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Floor(Clone).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/LevelEndElevator(Clone).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/LevelEndElevator(Clone).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Traps(Clone).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Traps(Clone).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Walls(Clone).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Prefabs/Walls(Clone).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Traps(Clone).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Traps(Clone).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Traps(Clone).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Traps(Clone).asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Walls(Clone).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Walls(Clone).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Walls(Clone).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/Walls(Clone).asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/root.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/root.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/root.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Demo/Level Objects/root.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Character.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovementScripts/CharacterMovements.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterMovementScripts/CharacterMovements.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorScripts/Password.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorScripts/Password.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameplayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameplayScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovementScripts/GroundChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterMovementScripts/GroundChecker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +53,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScripts/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScripts/Password.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/PresurePlateHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScripts/DoorHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="26t3QLS0uIzfQe6rPCr1DMCq4Sd" />
@@ -121,7 +118,7 @@
       <workItem from="1651954630496" duration="401000" />
       <workItem from="1651959556681" duration="3235000" />
       <workItem from="1651993413281" duration="1358000" />
-      <workItem from="1652022743962" duration="1733000" />
+      <workItem from="1652022743962" duration="2572000" />
     </task>
     <servers />
   </component>

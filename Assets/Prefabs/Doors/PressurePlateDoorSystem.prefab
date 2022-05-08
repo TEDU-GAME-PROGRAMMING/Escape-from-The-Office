@@ -199,4 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 794891a63e09585458c6944d7c454afb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventType: 1
   door: {fileID: 9112855558458790900}
+  time: 5
