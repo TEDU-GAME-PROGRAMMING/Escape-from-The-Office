@@ -121,7 +121,8 @@ public class CharacterMovements : MonoBehaviour
             isJumped = false;
             rb.AddForce(new Vector3(0,JumpForce,0));
         }
-
+        //MouseX = Mathf.Clamp(MouseX,-90f,90f);
+        //MouseY = Mathf.Clamp(MouseY,-90f,90f);
         
         //Mouse rotation
         transform.Rotate(new Vector3(0,MouseX,0));
