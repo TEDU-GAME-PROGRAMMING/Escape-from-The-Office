@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class DoorHandler : MonoBehaviour
 {
     [SerializeField]private DoorType doorType;
@@ -11,8 +11,7 @@ public class DoorHandler : MonoBehaviour
     public GameObject Door;
 
     public Transform Hinge;
-    [SerializeField]private Text Answer;
-   private string Ans = "1234";
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -82,16 +81,5 @@ public class DoorHandler : MonoBehaviour
         
     }
 
-    public void Number(int number){
-        Answer.text  += number.ToString();
-    }
-
-    public void Enter(){
-        if(Answer.text == Ans){
-                Answer.text = "Correct";
-        }
-        else{
-            Answer.text = "Incorrect";
-        }
-    }
+    
 }
