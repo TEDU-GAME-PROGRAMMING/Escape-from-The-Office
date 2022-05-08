@@ -84,7 +84,7 @@ public class PlayerPrefsManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("MASTER UNLOCKED LEVEL IS OUT OF RANGE");
+            Debug.LogError("MASTER UNLOCKED LEVEL IS OUT OF RANGE OR THIS LEVEL HAS ALREADY UNLOCKED");
         }
         
     }

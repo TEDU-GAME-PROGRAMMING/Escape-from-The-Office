@@ -24,11 +24,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScripts/LifeSituation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/MovingTrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/TrapAudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScripts/DoorType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelScripts/LevelSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScripts/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScripts/Password.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScripts/DoorHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="26t3QLS0uIzfQe6rPCr1DMCq4Sd" />
@@ -89,6 +91,10 @@
       <workItem from="1651414374774" duration="1351000" />
       <workItem from="1651576336730" duration="1126000" />
       <workItem from="1651593045006" duration="2688000" />
+      <workItem from="1651917344643" duration="1008000" />
+      <workItem from="1651954630496" duration="401000" />
+      <workItem from="1651959556681" duration="3235000" />
+      <workItem from="1651993413281" duration="1358000" />
     </task>
     <servers />
   </component>
