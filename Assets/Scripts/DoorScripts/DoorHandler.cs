@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class DoorHandler : MonoBehaviour
 {
     [SerializeField]private DoorType doorType;
@@ -10,6 +11,7 @@ public class DoorHandler : MonoBehaviour
     public GameObject Door;
 
     public Transform Hinge;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,7 @@ public class DoorHandler : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -78,4 +80,6 @@ public class DoorHandler : MonoBehaviour
         
         
     }
+
+    
 }
