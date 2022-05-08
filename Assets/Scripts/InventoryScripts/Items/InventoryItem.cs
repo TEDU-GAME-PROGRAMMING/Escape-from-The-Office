@@ -10,8 +10,8 @@ public class InventoryItem : MonoBehaviour
 
     public void OnPickup()
     {
-        //gameObject.SetActive(false);
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 }
 public class InventoryEventArgs : EventArgs
