@@ -33,6 +33,26 @@ public class SelectionManager : MonoBehaviour
                 }
                     
             } 
+
+            if(selection.GetComponent<Lever>() != null)
+            {
+                Lever lever = selection.GetComponent<Lever>();
+                interactTextMesh.enabled = true;
+
+                if (lever.isActive)
+                {
+                    interactTextMesh.text = "Press [E] to <color=\"red\"><b>disable</b></color> lever";
+                }
+                else
+                {
+                    interactTextMesh.text = "Press [E] to <color=\"red\"><b>enable</b></color> lever";
+                }
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    lever.isActive = !lever.isActive;
+                }
+            }
             
         }
         else
