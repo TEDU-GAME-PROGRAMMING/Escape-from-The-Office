@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PresurePlateHandler : MonoBehaviour
 {
+    [SerializeField] private DoorEvent eventType;
+
     bool IsOpen = false;
 
     public GameObject door;
     private DoorHandler doorHandler;
 
-    int time = 5; //In Second
+    public int time = 5; //In Second
 
     private Vector3 replace = new Vector3(.0f, .01f, .0f);
     private bool IsCoroutineStarted = false;
@@ -40,19 +42,22 @@ public class PresurePlateHandler : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             transform.position += replace;
-
-            //Wait For An Amount of time and Close the Door
-            if (IsCoroutineStarted == false)
+            if (eventType == DoorEvent.Timed)
             {
-                IsCoroutineStarted = true;
-                StartCoroutine(WaitForClose());
-            }
-            else //Player Passes Plate Again
-            {
-                StopAllCoroutines();
-                StartCoroutine(WaitForClose());
+                //Wait For An Amount of time and Close the Door
+                if (IsCoroutineStarted == false)
+                {
+                    IsCoroutineStarted = true;
+                    StartCoroutine(WaitForClose());
+                }
+                else //Player Passes Plate Again
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(WaitForClose());
 
+                }
             }
+           
 
 
 

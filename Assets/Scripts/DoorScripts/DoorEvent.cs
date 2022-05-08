@@ -1,0 +1,5 @@
+enum DoorType
+{
+    Fixed, 
+    Timed
+};
