@@ -9,7 +9,6 @@ public class DoorHandler : MonoBehaviour
     public string DoorColor;
 
     public GameObject Door;
-
     public Transform Hinge;
     
     // Start is called before the first frame update
@@ -67,6 +66,7 @@ public class DoorHandler : MonoBehaviour
     {
         if (doorType == DoorType.PressurPlate)
         {
+
             //If player press the pressure plate, open.
             OpeningDoor();
         }
@@ -81,5 +81,11 @@ public class DoorHandler : MonoBehaviour
         
     }
 
-    
+    public void ClosingDoor()
+    {
+
+        Door.transform.RotateAround(Hinge.position, new Vector3(0, 1, 0), 90f);
+
+
+    }
 }

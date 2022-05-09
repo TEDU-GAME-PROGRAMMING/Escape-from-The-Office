@@ -27,12 +27,15 @@ public class Password : MonoBehaviour
         Answer.text  += number.ToString();
     }
 
+    
     public void Enter(){
         if(Answer.text == Ans){
             Answer.text = "Correct";
             WaitForResult();
             this.gameObject.SetActive(false);
             LinkedDoor.OpenPasswordDoor();
+            CharacterMovements charMovements = FindObjectOfType<CharacterMovements>();
+            charMovements.isPlayerEnable = true;
         }
         else{
             Answer.text = "Incorrect";
@@ -40,6 +43,6 @@ public class Password : MonoBehaviour
     }
     IEnumerator WaitForResult()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
     }
 }
