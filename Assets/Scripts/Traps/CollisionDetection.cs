@@ -25,6 +25,10 @@ public class CollisionDetection : MonoBehaviour
             FindObjectOfType<LevelSceneManager>().HandleLose(0);
             
         }
+        if(trapType == TrapType.Plane)
+        {
+            Destroy(gameObject);
+        }
     }
 
     IEnumerator WaitForSound()

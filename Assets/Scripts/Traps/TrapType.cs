@@ -1,6 +1,6 @@
 enum TrapType
 {
-    Bomb,
+    Plane,
     Blade,
     Spike,
     Laser
