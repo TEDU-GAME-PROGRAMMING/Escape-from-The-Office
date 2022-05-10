@@ -21,6 +21,14 @@ public class MovingTrap : MonoBehaviour
            if (Vector3.Distance(TrapObj.transform.position, checkpointPositions[ind].position) <= 0.05f)
            {
                ChangeCheckpoint();
+
+               if(TrapObj.GetComponent<CollisionDetection>()){
+                   if (TrapObj.GetComponent<CollisionDetection>().CheckType()) 
+                   {
+                       Debug.Log(TrapObj.name + " " +TrapObj.GetComponent<CollisionDetection>());
+                       TrapObj.transform.LookAt(checkpointPositions[ind]); 
+                   }
+               }
            }
    
        }

@@ -1,7 +1,7 @@
 enum TrapType
 {
     Plane,
-    Blade,
-    Spike,
+    Scissors,
+    Pencil,
     Laser
 };
