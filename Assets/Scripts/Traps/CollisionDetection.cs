@@ -12,6 +12,10 @@ public class CollisionDetection : MonoBehaviour
         audioSource = FindObjectOfType<AudioSource>().gameObject;
     }
 
+    public bool CheckType()
+    {
+        return trapType == TrapType.Scissors || trapType == TrapType.Laser;
+    }
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
