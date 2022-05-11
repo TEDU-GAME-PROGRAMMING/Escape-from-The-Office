@@ -5493,6 +5493,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2132987144}
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
+      propertyPath: timeToPass
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: PauseButton
       value: 
       objectReference: {fileID: 2132987147}
@@ -6565,6 +6569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 987761374}
+  - component: {fileID: 987761375}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -6589,6 +6594,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &987761375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987761373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4793fdc0668ff3a4e80f242dc2cab5f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 5
+  inventory: {fileID: 0}
+  interactTextMesh: {fileID: 0}
 --- !u!1 &991671799
 GameObject:
   m_ObjectHideFlags: 0
@@ -17140,6 +17160,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 6107992534491977047, guid: 98c1467a0a13aa449af2674c3856f5f2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7174114305077058174, guid: 98c1467a0a13aa449af2674c3856f5f2, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -17191,22 +17215,6 @@ PrefabInstance:
     - target: {fileID: 7177980988461424876, guid: 98c1467a0a13aa449af2674c3856f5f2, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178347109627849390, guid: 98c1467a0a13aa449af2674c3856f5f2, type: 3}
-      propertyPath: Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178347109627849390, guid: 98c1467a0a13aa449af2674c3856f5f2, type: 3}
-      propertyPath: JumpForce
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178347109627849390, guid: 98c1467a0a13aa449af2674c3856f5f2, type: 3}
-      propertyPath: walkSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178347109627849390, guid: 98c1467a0a13aa449af2674c3856f5f2, type: 3}
-      propertyPath: sprintSpeed
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c1467a0a13aa449af2674c3856f5f2, type: 3}

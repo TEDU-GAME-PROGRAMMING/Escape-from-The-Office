@@ -7,8 +7,8 @@ using Vector3 = UnityEngine.Vector3;
 public class CharacterMovements : MonoBehaviour
 {
     //TODO Sprint and crouch will be added.
-    
     public Rigidbody rb;
+    public Transform cam;
     public bool isPlayerEnable = true; // false when character reaches the end.
     public bool isGrounded = true; // true when character is landed after jump.
     public bool isJumped = false;
@@ -47,14 +47,14 @@ public class CharacterMovements : MonoBehaviour
     [Header("Inputs")]
     public float HorizontalInput;
     public float VerticalInput;
-    public float MouseX;
-    public float MouseY;
+    private Vector2 PlayerMouseInput;
+    private float x_Rotation;
 
 
     //**************************************************************************
     //**************************************************************************
-    private void Start(){
-
+    private void Start()
+    {
         startYScale = transform.localScale.y;
     }
     //**************************************************************************
@@ -73,12 +73,11 @@ public class CharacterMovements : MonoBehaviour
             HorizontalInput = Input.GetAxis("Horizontal") * Speed;
             VerticalInput = Input.GetAxis("Vertical") * Speed;
         }
-        MouseX = Input.GetAxis("Mouse X") * MouseSensivity;
-        MouseY = -Input.GetAxis("Mouse Y") * MouseSensivity;
+        PlayerMouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
         //**************************************************************************
         //**************************************************************************
-         // start crouch
+        // start crouch
         if (Input.GetKeyDown(crouchKey))
         {
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
@@ -95,6 +94,7 @@ public class CharacterMovements : MonoBehaviour
     }
     void FixedUpdate()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         if (isPlayerEnable)
         {
             HandleInputs();
@@ -121,11 +121,12 @@ public class CharacterMovements : MonoBehaviour
             isJumped = false;
             rb.AddForce(new Vector3(0,JumpForce,0));
         }
-        //MouseX = Mathf.Clamp(MouseX,-90f,90f);
-        //MouseY = Mathf.Clamp(MouseY,-90f,90f);
-        
-        //Mouse rotation
-        transform.Rotate(new Vector3(0,MouseX,0));
+
+        x_Rotation -= PlayerMouseInput.y * MouseSensivity;
+        x_Rotation = Mathf.Clamp(x_Rotation, -90f, 90f);
+
+        transform.Rotate(0f, PlayerMouseInput.x * MouseSensivity, 0f);
+        cam.transform.localRotation = Quaternion.Euler(x_Rotation, 0f, 0f);
     }
 
     
