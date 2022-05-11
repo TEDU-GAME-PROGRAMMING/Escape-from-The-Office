@@ -21,8 +21,11 @@ public class PrinterTrapHandler : MonoBehaviour
         if (Fire <= 0)
         {
            
-            GameObject newPlane = Instantiate(planePrefab, new Vector3(transform.position.x + 0, transform.position.y + 0.2f, transform.position.z + 0.5f), Quaternion.identity);
-            newPlane.GetComponent<Rigidbody>().velocity = newPlane.transform.forward * speed;
+
+            GameObject newPlane = Instantiate(planePrefab, transform.TransformPoint(0,0.2f,0.5f), Quaternion.identity);
+            newPlane.transform.rotation = transform.rotation;
+            newPlane.GetComponent<Rigidbody>().velocity = transform.forward * speed;
+
             Fire = 3f;
 
         }

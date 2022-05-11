@@ -20,10 +20,6 @@ public class DoorHandler : MonoBehaviour
     // Update is called once per frame
     void Update() 
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            OpeningDoor();
-        }
     }
 
     public void OpenKeyDoor(string KeyColor)
