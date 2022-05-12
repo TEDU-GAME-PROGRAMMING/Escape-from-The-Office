@@ -7,11 +7,8 @@ public class GroundChecker : MonoBehaviour
 {
     public CharacterMovements CharMovements;
 
-    private void OnCollisionStay(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        
-        //If collided object is Player, then player's isGrounded is True.
-        //Ground Checker Part of the character is entered the ground when it is landed after jump.
         if (other.gameObject.CompareTag("Player") )
         {
             CharMovements.isGrounded = true;
@@ -19,7 +16,16 @@ public class GroundChecker : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision other)
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            CharMovements.isGrounded = true;
+
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
@@ -27,4 +33,6 @@ public class GroundChecker : MonoBehaviour
 
         }
     }
+
+   
 }

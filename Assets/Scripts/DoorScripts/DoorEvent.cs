@@ -1,0 +1,5 @@
+enum DoorEvent
+{
+    Fixed, 
+    Timed
+};

@@ -6,7 +6,16 @@ public class CollisionDetection : MonoBehaviour
 {
     [SerializeField] private TrapType trapType;
     [SerializeField] private GameObject audioSource;
-    
+
+    private void Start()
+    {
+        audioSource = FindObjectOfType<AudioSource>().gameObject;
+    }
+
+    public bool CheckType()
+    {
+        return trapType == TrapType.Scissors || trapType == TrapType.Laser;
+    }
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
@@ -19,6 +28,10 @@ public class CollisionDetection : MonoBehaviour
             WaitForSound();
             FindObjectOfType<LevelSceneManager>().HandleLose(0);
             
+        }
+        if(trapType == TrapType.Plane)
+        {
+            Destroy(gameObject);
         }
     }
 

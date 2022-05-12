@@ -3,8 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="c1b76b0f-be12-463b-bc4f-d26adcca8061" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Escape-from-The-Office/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrapTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TrapTestScene.unity" afterDir="false" />
+<<<<<<< InventorySystem
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Traps/RotatingBossFemaleTrap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Traps/RotatingBossFemaleTrap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Traps/RotatingBossMaleTrap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Traps/RotatingBossMaleTrap.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Traps/CollisionDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Traps/CollisionDetection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Traps/MovingTrap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Traps/MovingTrap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Traps/TrapType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Traps/TrapType.cs" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/Bakery/ftGlobalStorage.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bakery/ftGlobalStorage.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Test 01/Level Objects/LevelEndElevator(Clone).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Test 01/Level Objects/LevelEndElevator(Clone).asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Test 01/Level Objects/LevelEndElevator(Clone).asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Test 01/Level Objects/LevelEndElevator(Clone).asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Test 01/Level Objects/Prefabs/LevelEndElevator(Clone).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Test 01/Level Objects/Prefabs/LevelEndElevator(Clone).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level Test 01/Level Objects/root.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level Test 01/Level Objects/root.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameplayScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameplayScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorScripts/DoorHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorScripts/DoorHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Traps/PrinterTrapHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Traps/PrinterTrapHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+>>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +40,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScripts/LifeSituation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovementScripts/MoveCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/MovingTrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/TrapAudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScripts/DoorType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelScripts/LevelSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScripts/OpenKeyPad.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterScripts/Character.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Traps/Rotate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScripts/Password.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorScripts/DoorHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="26t3QLS0uIzfQe6rPCr1DMCq4Sd" />
@@ -89,6 +109,20 @@
       <workItem from="1651414374774" duration="1351000" />
       <workItem from="1651576336730" duration="1126000" />
       <workItem from="1651593045006" duration="2688000" />
+      <workItem from="1651917344643" duration="1008000" />
+      <workItem from="1651954630496" duration="401000" />
+      <workItem from="1651959556681" duration="3235000" />
+      <workItem from="1651993413281" duration="1358000" />
+      <workItem from="1652124144062" duration="1639000" />
+      <workItem from="1652133318894" duration="321000" />
+      <workItem from="1652184149930" duration="2894000" />
+      <workItem from="1652198078161" duration="131000" />
+      <workItem from="1652198540919" duration="727000" />
+<<<<<<< InventorySystem
+=======
+      <workItem from="1652215986232" duration="301000" />
+      <workItem from="1652283862524" duration="4160000" />
+>>>>>>> main
     </task>
     <servers />
   </component>
