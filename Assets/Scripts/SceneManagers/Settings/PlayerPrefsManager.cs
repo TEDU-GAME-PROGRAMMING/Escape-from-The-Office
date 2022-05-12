@@ -17,7 +17,7 @@ public class PlayerPrefsManager : MonoBehaviour
 
     private const string MASTER_UNLOCKED_LEVEL_KEY = "UnlockedLevelKey";
     const int MIN_UNLOCKEDLEVEL = 0;
-    const int MAX_UNLOCKEDLEVEL = 3;
+    const int MAX_UNLOCKEDLEVEL = 2;
     const int DEFAULT_UNLOCKEDLEVEL = 1;
     public static float getSound()
     {
@@ -78,9 +78,12 @@ public class PlayerPrefsManager : MonoBehaviour
     public static void setUnlockedLevel(int unlockedLevel)
     {
         int lastUnlockedLevel = getUnlockedLevel();
+        Debug.Log(lastUnlockedLevel);
+        Debug.Log(unlockedLevel);
         if(unlockedLevel >= MIN_UNLOCKEDLEVEL && unlockedLevel <= MAX_UNLOCKEDLEVEL && unlockedLevel > lastUnlockedLevel)
         {
             PlayerPrefs.SetInt(MASTER_UNLOCKED_LEVEL_KEY, unlockedLevel);
+           
         }
         else
         {

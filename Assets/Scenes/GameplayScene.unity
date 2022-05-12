@@ -453,7 +453,7 @@ PrefabInstance:
       objectReference: {fileID: 1651170695}
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: Levels.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: Levels.Array.data[0]
@@ -462,15 +462,15 @@ PrefabInstance:
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: Levels.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 4479292e6630cf64bbfca15ae0c21aaf, type: 2}
+      objectReference: {fileID: 11400000, guid: 5429920486e566c4db0e339c923cbaed, type: 2}
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: Levels.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 9b096fb31dcdab145a5638345a25eb8d, type: 2}
+      objectReference: {fileID: 11400000, guid: f926f33648406104e927cc35e61b089c, type: 2}
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: Levels.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 5429920486e566c4db0e339c923cbaed, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7677210082696236694, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: m_Name
       value: LevelSceneManager
@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParentLevelObject: {fileID: 186497330}
-  CurLevel: {fileID: 0}
+  CurLevel: {fileID: 11400000, guid: 4479292e6630cf64bbfca15ae0c21aaf, type: 2}
 --- !u!1 &1668162789
 GameObject:
   m_ObjectHideFlags: 0

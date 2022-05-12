@@ -15,7 +15,7 @@ public class LevelSceneManager : MonoBehaviour
     public LevelManager levelManager;
     public bool levelFailed = false;
     public Level curLevel;
-
+    public bool levelFinished = false;
     public float timeToPass;
     public List<Level> Levels;
 
@@ -91,13 +91,18 @@ public class LevelSceneManager : MonoBehaviour
    
     public void HandleWin()
     {
-       
-        Time.timeScale = 0;
-        Cursor.lockState = CursorLockMode.None;
-        PauseButton.SetActive(false);
-        int unlockedLevel = curLevel.ID + 1;
-        PlayerPrefsManager.setUnlockedLevel(unlockedLevel);
-        WinPanel.SetActive(true);
+        if (!levelFinished)
+        {
+            levelFinished = true;
+            Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            PauseButton.SetActive(false);
+            int unlockedLevel = curLevel.ID + 1;
+            Debug.Log(curLevel.name + " " + curLevel.ID);
+            PlayerPrefsManager.setUnlockedLevel(unlockedLevel);
+            WinPanel.SetActive(true);
+        }
+        
     }
 
     public void PauseHandle()

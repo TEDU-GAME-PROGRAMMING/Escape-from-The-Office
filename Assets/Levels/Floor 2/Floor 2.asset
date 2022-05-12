@@ -15,5 +15,5 @@ MonoBehaviour:
   Name: Floor 2
   ID: 0
   Description: 
-  TimeToPass: 0
+  TimeToPass: 120
   LevelObject: {fileID: 11400000, guid: d337539eeb3733741b8699758e604d98, type: 2}

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 0}
   children:
-  - {fileID: 11400000, guid: 330d092fdb72de546ad5d6437ce66f1e, type: 2}
+  - {fileID: 11400000, guid: 87b7ea81165e7f442a8e71f5e8e4880f, type: 2}
