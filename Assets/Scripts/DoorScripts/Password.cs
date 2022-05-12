@@ -5,7 +5,7 @@ using TMPro;
 public class Password : MonoBehaviour
 {
     [SerializeField]private TextMeshProUGUI  Answer;
-    private string Ans = "1234";
+    public string Ans = "26159";
 
     public DoorHandler LinkedDoor;
     // Start is called before the first frame update
@@ -33,7 +33,8 @@ public class Password : MonoBehaviour
             Answer.text = "Correct";
             WaitForResult();
             this.gameObject.SetActive(false);
-            LinkedDoor.OpenPasswordDoor();
+            LinkedDoor.OpeningDoor();
+            LinkedDoor.isOpened = true;
             CharacterMovements charMovements = FindObjectOfType<CharacterMovements>();
             charMovements.isPlayerEnable = true;
         }

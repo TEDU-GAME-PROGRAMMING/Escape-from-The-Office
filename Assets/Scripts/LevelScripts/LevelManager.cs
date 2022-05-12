@@ -45,19 +45,19 @@ public class LevelManager : MonoBehaviour
         LevelObject levelRootObject = ScriptableObject.CreateInstance<LevelObject>();
         levelRootObject.Prefab = ParentLevelObject.gameObject;
         levelRootObject.children = new List<LevelObject>();
-       
+        
         foreach (Transform child in ParentLevelObject.transform)
         {
             SaveLevelToFile(ref levelRootObject, child.gameObject, ref levelObjectsPath);
         }
-        
+       
         AssetDatabase.CreateAsset(levelRootObject, rootLevelObjectPath);
         
         Level level = ScriptableObject.CreateInstance<Level>();
         level.Name = levelName;
         level.LevelObject = levelRootObject;
         AssetDatabase.CreateAsset(level, levelObjPath);
-        
+       
         yield return null;
         _coroutine = null;
     }
@@ -100,7 +100,7 @@ public class LevelManager : MonoBehaviour
         levelObject.children.Add(childLevelObject);
         
         string levelObjectPath = $"{levelObjectsPath}{prefab.name}.asset";
-        
+  
         AssetDatabase.CreateAsset(childLevelObject, levelObjectPath);
     }
     private GameObject SavePrefab(GameObject _gameObject, string path)

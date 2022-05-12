@@ -13,6 +13,7 @@ public class SelectionManager : MonoBehaviour
     public Inventory inventory;
     public GameObject interact;
     public TextMeshProUGUI interactTextMesh;
+    public GameObject keyboardButtonParent;
     public TextMeshProUGUI keyboardButtonName;
     public Image keyboardButtonProgress;
     public float interactDuration;
@@ -32,32 +33,45 @@ public class SelectionManager : MonoBehaviour
             if (selection.GetComponent<InventoryItem>() != null)
             {
                 InventoryItem inventoryItem = selection.GetComponent<InventoryItem>();
-
-                interact.SetActive(true);
-                interactTextMesh.text = $"Hold down [E] to pick up <color=\"red\"><b>{inventoryItem.item.itemName}</b></color>";
-                keyboardButtonName.text = "E";
-
-                if (Input.GetKeyDown(KeyCode.E))
+                if (inventoryItem.item.type == ItemType.Object)
                 {
-                    IncrementProgress(collectDuration);
-                    if (isFinished)
+                    interact.SetActive(true);
+                    keyboardButtonParent.SetActive(true);
+                    interactTextMesh.text = $"Hold down [E] to pick up <color=\"red\"><b>{inventoryItem.item.itemName}</b></color>";
+                    keyboardButtonName.text = "E";
+
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
-                        inventory.AddItem(inventoryItem);
-                        isFinished = false;
+                        IncrementProgress(collectDuration);
+                        if (isFinished)
+                        {
+                            inventory.AddItem(inventoryItem);
+                            isFinished = false;
+                        }
                     }
+                    else
+                    {
+                        currentTimeElapsed = 0f;
+                    }
+                    updateProgressImage(collectDuration);
                 }
-                else
+
+                if (inventoryItem.item.type == ItemType.Script)
                 {
-                    currentTimeElapsed = 0f;
+                   
+                    interact.SetActive(true);
+                    keyboardButtonParent.SetActive(false);
+                    interactTextMesh.text = $"<b>{inventoryItem.item.description}</b>";
+                   
                 }
-                updateProgressImage(collectDuration);
+               
             }
 
             if (selection.GetComponent<Lever>() != null)
             {
                 Lever lever = selection.GetComponent<Lever>();
                 interact.SetActive(true);
-
+                keyboardButtonParent.SetActive(true);
                 if (lever.isActive)
                 {
                     interactTextMesh.text = "Hold down [E] to <color=\"red\"><b>disable</b></color> lever";
@@ -82,6 +96,43 @@ public class SelectionManager : MonoBehaviour
                     currentTimeElapsed = 0f;
                 }
                 updateProgressImage(interactDuration);
+            }
+
+            if (selection.GetComponent<DoorHandler>() && !selection.GetComponent<DoorHandler>().isOpened)
+            {
+                GameObject DoorObject = selection.gameObject;
+                if (DoorObject.GetComponent<DoorHandler>().GetDoorType().Equals("Password"))
+                {
+                    GameObject parentDoorSystem = selection.transform.parent.gameObject;
+                    interact.SetActive(true);
+                    keyboardButtonParent.SetActive(true);
+                    interactTextMesh.text = "Hold down [E] to <color=\"red\"><b>open password keypad</b></color>";
+                    keyboardButtonName.text = "E";
+
+                    if (Input.GetKey(KeyCode.E))
+                    {
+                        if (parentDoorSystem.GetComponent<PasswordDoorSystemHandler>().KeypadCanvas.gameObject.activeSelf)
+                        {
+                            parentDoorSystem.GetComponent<PasswordDoorSystemHandler>().KeypadCanvas.gameObject.SetActive(true);
+                        }
+                        else
+                        {
+                            IncrementProgress(interactDuration);
+                            if (isFinished)
+                            {
+                                parentDoorSystem.GetComponent<PasswordDoorSystemHandler>().KeypadCanvas.gameObject.SetActive(true);
+                                isFinished = false;
+                            }
+                        }
+                    
+                    }
+                    else
+                    {
+                        currentTimeElapsed = 0f;
+                    }
+                    updateProgressImage(interactDuration);
+                }
+                
             }
 
         }

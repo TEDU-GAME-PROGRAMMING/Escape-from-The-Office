@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ac911ca7a75c4441a8ebc43c305ba3b, type: 3}
   m_Name: BinaryToDecimalRoom
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4099824352391420743, guid: eeccdece38238d94db0a40f9b45ab47f, type: 3}
+  Prefab: {fileID: 161203713, guid: faf016f2fa3085f4b860f1747f92ca8a, type: 3}
   children: []

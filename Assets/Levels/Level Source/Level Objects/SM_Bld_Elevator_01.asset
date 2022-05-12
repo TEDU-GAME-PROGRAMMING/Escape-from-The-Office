@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ac911ca7a75c4441a8ebc43c305ba3b, type: 3}
-  m_Name: Hall
+  m_Name: SM_Bld_Elevator_01
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 27783727, guid: 75d22c47eea080c418e145e7d27debca, type: 3}
+  Prefab: {fileID: 136809066801819113, guid: 1f60e19e365f02e45ba7b75c86f65cae, type: 3}
   children: []

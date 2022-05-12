@@ -40,7 +40,7 @@ public class BinaryLeverDoor : MonoBehaviour
                 if (Levers[i].isActive)
                 {
                     TrueLeverCount[i] = true;
-                    Debug.Log("1: " + i);
+                    
                 }
                 else
                 {
@@ -55,7 +55,7 @@ public class BinaryLeverDoor : MonoBehaviour
                 {
                     
                     TrueLeverCount[i] = true;
-                    Debug.Log("0: " + i);
+                    
                 }
                 else
                 {
@@ -67,8 +67,8 @@ public class BinaryLeverDoor : MonoBehaviour
 
         if (!TrueLeverCount.Contains(false) && !isOpened)
         {
-            Debug.Log("BURADA ACİLDİ");
-            LeverDoor.OpenLeverDoor();
+            
+            LeverDoor.OpeningDoor();
             isOpened = true;
         }
     }

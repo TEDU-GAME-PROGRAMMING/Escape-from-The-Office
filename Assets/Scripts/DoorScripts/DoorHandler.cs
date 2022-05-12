@@ -10,7 +10,8 @@ public class DoorHandler : MonoBehaviour
 
     public GameObject Door;
     public Transform Hinge;
-    
+
+    public bool isOpened = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,26 +23,30 @@ public class DoorHandler : MonoBehaviour
     {
     }
 
-    public void OpenKeyDoor(string KeyColor)
-    {
-        if (doorType == DoorType.Key)
-        {
-            if (KeyColor.Equals(DoorColor))
-            {
-                OpeningDoor();
-            }
-            //If player has a right key, open.
-            
-        }
-    }
-    public void OpenPasswordDoor()
+    public string GetDoorType()
     {
         if (doorType == DoorType.Password)
         {
-            //If player found the password, open.
-            OpeningDoor();
+            return "Password";
         }
-      
+        if (doorType == DoorType.Key)
+        {
+            return "Key";
+        }
+        if (doorType == DoorType.Lever)
+        {
+            return "Lever";
+        }
+        if (doorType == DoorType.PressurPlate)
+        {
+            return "PressurPlate";
+        }
+        if (doorType == DoorType.Broke)
+        {
+            return "Broke";
+        }
+
+        return "ERROR";
     }
     public void BrokeDoor()
     {
@@ -50,14 +55,7 @@ public class DoorHandler : MonoBehaviour
             //If player has tool to broke, open.
         }
     }
-    public void OpenLeverDoor()
-    {
-        if (doorType == DoorType.Lever)
-        {
-            //If player open a lever, open
-            OpeningDoor();
-        }
-    }
+
     public void OpenPressurePlateDoor()
     {
         if (doorType == DoorType.PressurPlate)
@@ -84,4 +82,5 @@ public class DoorHandler : MonoBehaviour
 
 
     }
+    
 }
