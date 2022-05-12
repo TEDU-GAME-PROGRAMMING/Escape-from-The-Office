@@ -87,7 +87,16 @@ public class SelectionManager : MonoBehaviour
                     IncrementProgress(interactDuration);
                     if (isFinished)
                     {
+                        
                         lever.isActive = !lever.isActive;
+                        if (lever.isActive)
+                        {
+                            lever.gameObject.GetComponent<Animator>().SetBool("isEnable", true);
+                        }
+                        else
+                        {
+                            lever.gameObject.GetComponent<Animator>().SetBool("isEnable", false);
+                        }
                         isFinished = false;
                     }
                 }
