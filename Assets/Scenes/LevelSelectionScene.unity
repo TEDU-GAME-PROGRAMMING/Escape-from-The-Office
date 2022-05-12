@@ -1227,10 +1227,10 @@ MonoBehaviour:
   - {fileID: 438773966}
   - {fileID: 77434268}
   Levels:
-  - {fileID: 11400000, guid: f926f33648406104e927cc35e61b089c, type: 2}
-  - {fileID: 11400000, guid: e3852a267b5c5b24dbcf5f704924605d, type: 2}
+  - {fileID: 11400000, guid: 4479292e6630cf64bbfca15ae0c21aaf, type: 2}
+  - {fileID: 11400000, guid: 4479292e6630cf64bbfca15ae0c21aaf, type: 2}
   - {fileID: 11400000, guid: 9b096fb31dcdab145a5638345a25eb8d, type: 2}
-  - {fileID: 11400000, guid: e3852a267b5c5b24dbcf5f704924605d, type: 2}
+  - {fileID: 11400000, guid: 5429920486e566c4db0e339c923cbaed, type: 2}
 --- !u!1 &1018228732
 GameObject:
   m_ObjectHideFlags: 0

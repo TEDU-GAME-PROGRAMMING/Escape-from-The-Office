@@ -10,11 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ac911ca7a75c4441a8ebc43c305ba3b, type: 3}
-  m_Name: root
+  m_Name: GroundHall
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 0}
-  children:
-  - {fileID: 11400000, guid: d874c6b2b13168546892ba53fc4cd8a3, type: 2}
-  - {fileID: 11400000, guid: 8bdeae1fd3408f144a498ab19c7a5bb4, type: 2}
-  - {fileID: 11400000, guid: df203b9d7b2702e41b00eca6b5b536a0, type: 2}
-  - {fileID: 11400000, guid: 87e58530994bc4144a12bafc5e8cb3ec, type: 2}
+  Prefab: {fileID: 1464123218, guid: 3dd13d31e6cf74d429eb7fed260e88f7, type: 3}
+  children: []
