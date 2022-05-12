@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ac911ca7a75c4441a8ebc43c305ba3b, type: 3}
-  m_Name: Floor2(Clone)(Clone)
+  m_Name: Floor2(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 1275360811, guid: 92c64f360c5d8ef4f9206a999c9971ec, type: 3}
+  Prefab: {fileID: 3491020471654884947, guid: 4ccdccdcaca8d404ebc524206b4af0f6, type: 3}
   children: []
