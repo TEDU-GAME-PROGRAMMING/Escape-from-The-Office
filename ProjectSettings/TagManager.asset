@@ -8,6 +8,7 @@ TagManager:
   - Trap
   - Item
   - Lever
+  - Plate
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 

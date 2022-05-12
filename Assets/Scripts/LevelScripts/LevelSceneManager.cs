@@ -61,6 +61,7 @@ public class LevelSceneManager : MonoBehaviour
     
     public void HandleLose(int loseType)
     {
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
         PauseButton.SetActive(false);
         if (loseType == 0)
@@ -76,6 +77,7 @@ public class LevelSceneManager : MonoBehaviour
    
     public void HandleWin()
     {
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
         PauseButton.SetActive(false);
         int unlockedLevel = curLevel.ID + 1;
@@ -85,6 +87,7 @@ public class LevelSceneManager : MonoBehaviour
 
     public void PauseHandle()
     {
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
         PausePanel.SetActive(true);
         
@@ -92,27 +95,32 @@ public class LevelSceneManager : MonoBehaviour
 
     public void UnPauseHandle()
     {
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 1;
         PausePanel.SetActive(false);
     }
 
     public void LoadMainMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenuScene");
     }
     public void LoadSettings()
     {
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 1;
         SceneManager.LoadScene("SettingsScene");
     }
     public void LoadLevelSelectionScene()
     {
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 1;
         SceneManager.LoadScene("LevelSelectionScene");
     }
     public void LoadNextLevel()
     {
+        Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 1;
         if (curLevel.ID + 1 < Levels.Count)
         {
