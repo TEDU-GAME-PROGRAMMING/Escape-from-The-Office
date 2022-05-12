@@ -111,20 +111,20 @@ public class SelectionManager : MonoBehaviour
 
                     if (Input.GetKey(KeyCode.E))
                     {
-                        if (parentDoorSystem.GetComponent<PasswordDoorSystemHandler>().KeypadCanvas.gameObject.activeSelf)
+                        IncrementProgress(interactDuration);
+                        if (isFinished)
                         {
+                            Cursor.lockState = CursorLockMode.None;
                             parentDoorSystem.GetComponent<PasswordDoorSystemHandler>().KeypadCanvas.gameObject.SetActive(true);
+                            isFinished = false;
+                            FindObjectOfType<CharacterMovements>().isPlayerEnable = false;
                         }
-                        else
-                        {
-                            IncrementProgress(interactDuration);
-                            if (isFinished)
-                            {
-                                parentDoorSystem.GetComponent<PasswordDoorSystemHandler>().KeypadCanvas.gameObject.SetActive(true);
-                                isFinished = false;
-                            }
-                        }
-                    
+                    }
+                    else if (Input.GetKey(KeyCode.R))
+                    {
+                        Cursor.lockState = CursorLockMode.Locked;
+                        parentDoorSystem.GetComponent<PasswordDoorSystemHandler>().KeypadCanvas.gameObject.SetActive(false);
+                        FindObjectOfType<CharacterMovements>().isPlayerEnable = true;
                     }
                     else
                     {

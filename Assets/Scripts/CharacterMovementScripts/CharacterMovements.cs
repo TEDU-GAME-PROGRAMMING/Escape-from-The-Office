@@ -94,9 +94,10 @@ public class CharacterMovements : MonoBehaviour
     }
     void FixedUpdate()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        
         if (isPlayerEnable)
         {
+            Cursor.lockState = CursorLockMode.Locked;
             HandleInputs();
             StateHandler();
         }

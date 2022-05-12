@@ -35,6 +35,7 @@ public class Password : MonoBehaviour
             this.gameObject.SetActive(false);
             LinkedDoor.OpeningDoor();
             LinkedDoor.isOpened = true;
+            Cursor.lockState = CursorLockMode.Locked;
             CharacterMovements charMovements = FindObjectOfType<CharacterMovements>();
             charMovements.isPlayerEnable = true;
         }

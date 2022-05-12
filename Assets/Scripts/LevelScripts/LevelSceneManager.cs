@@ -18,7 +18,8 @@ public class LevelSceneManager : MonoBehaviour
 
     public float timeToPass;
     public List<Level> Levels;
-    
+
+    public bool pauseOpen = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,18 @@ public class LevelSceneManager : MonoBehaviour
         if (!levelFailed)
         {
             TimeHandle();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P) && !pauseOpen)
+        {
+            PauseHandle();
+            pauseOpen = true;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.P) && pauseOpen)
+        {
+            UnPauseHandle();
+            pauseOpen = false;
         }
         
     }
@@ -61,8 +74,9 @@ public class LevelSceneManager : MonoBehaviour
     
     public void HandleLose(int loseType)
     {
-        Cursor.lockState = CursorLockMode.None;
+        
         Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
         PauseButton.SetActive(false);
         if (loseType == 0)
         {
@@ -77,8 +91,9 @@ public class LevelSceneManager : MonoBehaviour
    
     public void HandleWin()
     {
-        Cursor.lockState = CursorLockMode.None;
+       
         Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
         PauseButton.SetActive(false);
         int unlockedLevel = curLevel.ID + 1;
         PlayerPrefsManager.setUnlockedLevel(unlockedLevel);
@@ -87,41 +102,47 @@ public class LevelSceneManager : MonoBehaviour
 
     public void PauseHandle()
     {
-        Cursor.lockState = CursorLockMode.None;
+        
         Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
         PausePanel.SetActive(true);
         
     }
 
     public void UnPauseHandle()
     {
-        Cursor.lockState = CursorLockMode.None;
+        
         Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
         PausePanel.SetActive(false);
     }
 
     public void LoadMainMenu()
     {
-        Cursor.lockState = CursorLockMode.None;
+        
         Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("MainMenuScene");
     }
     public void LoadSettings()
     {
-        Cursor.lockState = CursorLockMode.None;
+        
         Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("SettingsScene");
     }
     public void LoadLevelSelectionScene()
     {
-        Cursor.lockState = CursorLockMode.None;
+       
         Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("LevelSelectionScene");
     }
     public void LoadNextLevel()
     {
-        Cursor.lockState = CursorLockMode.None;
+       
         Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
         if (curLevel.ID + 1 < Levels.Count)
         {
             FindObjectOfType<LevelSelectionPassParameter>().SelectedLevel = Levels[curLevel.ID+1];

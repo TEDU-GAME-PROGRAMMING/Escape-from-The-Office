@@ -15,5 +15,5 @@ MonoBehaviour:
   Name: Level Source
   ID: 0
   Description: 
-  TimeToPass: 0
+  TimeToPass: 5
   LevelObject: {fileID: 11400000, guid: b4af5c504784d3b4fbc673a0584609ed, type: 2}
