@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ac911ca7a75c4441a8ebc43c305ba3b, type: 3}
-  m_Name: Hall
+  m_Script: {fileID: 11500000, guid: c4df64b2224376147b5d9d9b847f7a4e, type: 3}
+  m_Name: Ceku
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 27783727, guid: 75d22c47eea080c418e145e7d27debca, type: 3}
-  children: []
+  id: 1
+  itemName: John
+  type: 1
+  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  description: She has been drawing for 15 years and she is one of the best.
