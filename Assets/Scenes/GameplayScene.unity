@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParentLevelObject: {fileID: 186497330}
-  CurLevel: {fileID: 0}
+  CurLevel: {fileID: 11400000, guid: 5429920486e566c4db0e339c923cbaed, type: 2}
 --- !u!1 &1668162789
 GameObject:
   m_ObjectHideFlags: 0

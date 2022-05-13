@@ -15,7 +15,7 @@ public class CharacterMovements : MonoBehaviour
     [Header("Movement Settings")]
     public float Speed = 250.0f;
     public float JumpForce = 5000f;
-    public float MouseSensivity = 5f;
+    public float MouseSensivity = 3f;
     public Vector3 MovementDirection = Vector3.zero;
 
     //**************************************************************************
@@ -55,6 +55,7 @@ public class CharacterMovements : MonoBehaviour
     //**************************************************************************
     private void Start()
     {
+        MouseSensivity = PlayerPrefsManager.getSens();
         startYScale = transform.localScale.y;
     }
     //**************************************************************************
