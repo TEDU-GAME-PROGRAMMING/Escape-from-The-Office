@@ -10,13 +10,15 @@ public class SettingsSceneHandler : MonoBehaviour
 
     [SerializeField] private Slider _soundSlider;
     [SerializeField] private Slider _musicSlider;
-    [SerializeField] private TMP_Dropdown _graphicsDropdown;
+    [SerializeField] private Slider _sensSlider;
+    
     // Start is called before the first frame update
     void Start()
     {
         _soundSlider.value = PlayerPrefsManager.getSound();
         _musicSlider.value = PlayerPrefsManager.getMusic();
-        _graphicsDropdown.value = PlayerPrefsManager.getGraphics();
+        _sensSlider.value = PlayerPrefsManager.getSens();
+
     }
 
     // Update is called once per frame
@@ -31,13 +33,15 @@ public class SettingsSceneHandler : MonoBehaviour
     {
         PlayerPrefsManager.setSound(_soundSlider.value);
         PlayerPrefsManager.setMusic(_musicSlider.value);
-        PlayerPrefsManager.setGraphics(_graphicsDropdown.value);
+        PlayerPrefsManager.setSens(_sensSlider.value);
+
     }
     public void RestoreSettingsToDefault()
     {
         PlayerPrefsManager.setDefault();
-        _musicSlider.value = PlayerPrefsManager.getDefaultVolume();
-        _soundSlider.value = PlayerPrefsManager.getDefaultVolume();
-        _graphicsDropdown.value = PlayerPrefsManager.getDefaultGraphics();
+        _soundSlider.value = PlayerPrefsManager.getSound();
+        _musicSlider.value = PlayerPrefsManager.getMusic();
+        _sensSlider.value = PlayerPrefsManager.getSens();
+ 
     }
 }

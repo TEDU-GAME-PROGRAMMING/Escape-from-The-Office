@@ -8,7 +8,7 @@ public class SceneHandler : MonoBehaviour
 
     void Awake()
     {
-        if (!PlayerPrefs.HasKey("SoundKey") || !PlayerPrefs.HasKey("VolumeKey") || !PlayerPrefs.HasKey("GraphicsKey"))
+        if (!PlayerPrefs.HasKey("SoundKey") || !PlayerPrefs.HasKey("VolumeKey") || !PlayerPrefs.HasKey("SensKey"))
         {
             PlayerPrefsManager.setDefault();
         }
@@ -18,12 +18,7 @@ public class SceneHandler : MonoBehaviour
             PlayerPrefs.SetInt("UnlockedLevelKey",0);
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public void LoadMainMenuScene()
     {
         SceneManager.LoadScene("MainMenuScene");

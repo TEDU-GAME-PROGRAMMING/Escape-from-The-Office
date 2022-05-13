@@ -6,14 +6,16 @@ public class PlayerPrefsManager : MonoBehaviour
 {
     private const string MASTER_SOUND_KEY = "SoundKey";
     private const string MASTER_MUSIC_KEY = "VolumeKey";
-    private const string MASTER_GRAPHICS_KEY = "GraphicsKey";
+    private const string MASTER_SENSIVITY_KEY = "SensKey";
+    
     const float MIN_VOLUME = 0f;
     const float MAX_VOLUME = 1f;
-    const int MIN_GRAPHICS= 0;
-    const int MAX_GRAPHICS = 2;
-    const float DEFAULT_VOLUME = 0.2f;
-    const int DEFAULT_GRAPHICS = 1;
+    const float MIN_SENS = 1f;
+    const float MAX_SENS = 5f;
 
+    const float DEFAULT_VOLUME = 0.2f;
+
+    const float DEFAULT_SENS = 3f;
 
     private const string MASTER_UNLOCKED_LEVEL_KEY = "UnlockedLevelKey";
     const int MIN_UNLOCKEDLEVEL = 0;
@@ -53,23 +55,25 @@ public class PlayerPrefsManager : MonoBehaviour
         }
         
     }
-    
-    public static int getGraphics()
+
+    public static float getSens()
     {
-        return PlayerPrefs.GetInt(MASTER_GRAPHICS_KEY);
+        return PlayerPrefs.GetFloat(MASTER_SENSIVITY_KEY);
     }
-    public static void setGraphics(int graphics)
+
+    public static void setSens(float sens)
     {
-        if(graphics >= MIN_GRAPHICS && graphics <= MAX_GRAPHICS)
+        if(sens >= MIN_SENS && sens <= MAX_SENS)
         {
-            PlayerPrefs.SetInt(MASTER_GRAPHICS_KEY, graphics);
+            PlayerPrefs.SetFloat(MASTER_SENSIVITY_KEY, sens);
         }
         else
         {
-            Debug.LogError("MASTER GRAPH IS OUT OF RANGE");
+            Debug.LogError("MASTER VOLUME IS OUT OF RANGE");
         }
-        
+        PlayerPrefs.SetFloat(MASTER_SENSIVITY_KEY, sens);
     }
+
     
     public static int getUnlockedLevel()
     {
@@ -93,22 +97,15 @@ public class PlayerPrefsManager : MonoBehaviour
     }
     
     
-    
     public static void setDefault()
     {
         PlayerPrefs.SetFloat(MASTER_SOUND_KEY, DEFAULT_VOLUME);
         PlayerPrefs.SetFloat(MASTER_MUSIC_KEY, DEFAULT_VOLUME);
-        PlayerPrefs.SetInt(MASTER_GRAPHICS_KEY, DEFAULT_GRAPHICS);
+        PlayerPrefs.SetFloat(MASTER_SENSIVITY_KEY, DEFAULT_SENS);
         
     }
 
-    public static float getDefaultVolume()
-    {
-        return DEFAULT_VOLUME;
-    }
+ 
 
-    public static int getDefaultGraphics()
-    {
-        return DEFAULT_GRAPHICS;
-    }
+    
 }

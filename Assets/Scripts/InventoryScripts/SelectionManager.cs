@@ -28,7 +28,6 @@ public class SelectionManager : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, maxDistance))
         {
-            Debug.Log(hit.collider.gameObject.name);
             var selection = hit.transform;
             if (selection.GetComponent<InventoryItem>() != null)
             {
