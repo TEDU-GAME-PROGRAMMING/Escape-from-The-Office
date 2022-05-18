@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ground Floor
   m_EditorClassIdentifier: 
   Name: Ground Floor
-  ID: 1
+  ID: 0
   Description: 
   TimeToPass: 120
   LevelObject: {fileID: 11400000, guid: 92c40d2b88866b044a8483d16472242c, type: 2}
