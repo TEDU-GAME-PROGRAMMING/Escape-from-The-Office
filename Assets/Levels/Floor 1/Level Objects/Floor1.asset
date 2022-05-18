@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cebc65670e2ed3c44a19afb51c596729, type: 3}
-  m_Name: Ground Floor
+  m_Script: {fileID: 11500000, guid: 4ac911ca7a75c4441a8ebc43c305ba3b, type: 3}
+  m_Name: Floor1
   m_EditorClassIdentifier: 
-  Name: Ground Floor
-  ID: 2
-  Description: 
-  TimeToPass: 120
-  LevelObject: {fileID: 11400000, guid: 92c40d2b88866b044a8483d16472242c, type: 2}
+  Prefab: {fileID: 825748525, guid: 1b2ca33abeeae964cb47b86c7a5474d3, type: 3}
+  children: []

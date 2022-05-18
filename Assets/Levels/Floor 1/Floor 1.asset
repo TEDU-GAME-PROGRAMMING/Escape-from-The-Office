@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cebc65670e2ed3c44a19afb51c596729, type: 3}
-  m_Name: Ground Floor
+  m_Name: Floor 1
   m_EditorClassIdentifier: 
-  Name: Ground Floor
-  ID: 2
+  Name: Floor 1
+  ID: 1
   Description: 
-  TimeToPass: 120
-  LevelObject: {fileID: 11400000, guid: 92c40d2b88866b044a8483d16472242c, type: 2}
+  TimeToPass: 180
+  LevelObject: {fileID: 11400000, guid: 9885f74717aaa16449faf63cfa457a27, type: 2}

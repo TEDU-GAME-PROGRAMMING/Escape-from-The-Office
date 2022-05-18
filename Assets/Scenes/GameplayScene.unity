@@ -441,7 +441,7 @@ PrefabInstance:
       objectReference: {fileID: 2132987144}
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: timeToPass
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: PauseButton
@@ -462,7 +462,7 @@ PrefabInstance:
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: Levels.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: cbeb0fae5f83bb645ab87694059b291d, type: 2}
     - target: {fileID: 7111251556802614243, guid: b68c13ead57dab44dbaa70d9bad1ca22, type: 3}
       propertyPath: Levels.Array.data[2]
       value: 
@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParentLevelObject: {fileID: 186497330}
-  CurLevel: {fileID: 0}
+  CurLevel: {fileID: 11400000, guid: 4479292e6630cf64bbfca15ae0c21aaf, type: 2}
 --- !u!1 &1668162789
 GameObject:
   m_ObjectHideFlags: 0

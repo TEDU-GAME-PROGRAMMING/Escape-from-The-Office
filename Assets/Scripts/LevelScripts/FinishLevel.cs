@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class FinishLevel : MonoBehaviour
 {
+    public bool lastLevel = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class FinishLevel : MonoBehaviour
         Debug.Log(other.gameObject.name);
         if (other.CompareTag("Player"))
         {
-            FindObjectOfType<LevelSceneManager>().HandleWin();
+            FindObjectOfType<LevelSceneManager>().HandleWin(lastLevel);
         }
     }
 }

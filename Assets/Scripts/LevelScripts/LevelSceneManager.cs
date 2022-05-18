@@ -89,18 +89,28 @@ public class LevelSceneManager : MonoBehaviour
         LosePanel.SetActive(true);
     }
    
-    public void HandleWin()
+    public void HandleWin(bool isLastFloor)
     {
-        if (!levelFinished)
+        if (!levelFinished )
         {
-            levelFinished = true;
-            Time.timeScale = 0;
-            Cursor.lockState = CursorLockMode.None;
-            PauseButton.SetActive(false);
-            int unlockedLevel = curLevel.ID + 1;
-            Debug.Log(curLevel.name + " " + curLevel.ID);
-            PlayerPrefsManager.setUnlockedLevel(unlockedLevel);
-            WinPanel.SetActive(true);
+            if (!isLastFloor)
+            {
+                levelFinished = true;
+                Time.timeScale = 0;
+                Cursor.lockState = CursorLockMode.None;
+                PauseButton.SetActive(false);
+                int unlockedLevel = curLevel.ID + 1;
+                Debug.Log(curLevel.name + " " + curLevel.ID);
+                PlayerPrefsManager.setUnlockedLevel(unlockedLevel);
+                WinPanel.SetActive(true);
+            }
+            else
+            {
+                Time.timeScale = 1;
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene("EndGameScene");
+            }
+            
         }
         
     }
