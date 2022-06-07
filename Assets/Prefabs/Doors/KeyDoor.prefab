@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 2776083573988878357}
   - component: {fileID: 2783944185027734357}
   - component: {fileID: 2745341802090722717}
+  - component: {fileID: 104575006417384385}
   m_Layer: 0
   m_Name: SM_Bld_House_Door
   m_TagString: Untagged
@@ -125,6 +126,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0252988, y: 2.2243478, z: 0.23754601}
   m_Center: {x: -0.51264906, y: 1.1121739, z: 0.064641215}
+--- !u!114 &104575006417384385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2806355940269180889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2f4fc85f69bbd439b537ed342de207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorType: 0
+  DoorColor: red
+  Door: {fileID: 2807860837486399927}
+  Hinge: {fileID: 2806240073287068853}
+  isOpened: 0
 --- !u!1 &2807860837486399927
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +158,6 @@ GameObject:
   - component: {fileID: 2744070412836103787}
   - component: {fileID: 2744674111050447795}
   - component: {fileID: 2743261107730881811}
-  - component: {fileID: 2806240074972160013}
   m_Layer: 0
   m_Name: KeyDoor
   m_TagString: Untagged
@@ -155,7 +172,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2807860837486399927}
-  m_LocalRotation: {x: -0.00002981809, y: 0.0001235911, z: 0.0005773261, w: 0.9999999}
+  m_LocalRotation: {x: -0.000026145108, y: 0.000122198, z: 0.0005759949, w: 0.9999998}
   m_LocalPosition: {x: -4.35, y: 0.23663414, z: 13.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -269,19 +286,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 43312029640721738, guid: 749dd56850f71a443a9778d40ab28701, type: 2}
---- !u!114 &2806240074972160013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2807860837486399927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a2f4fc85f69bbd439b537ed342de207, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorType: 0
-  DoorColor: 
-  Door: {fileID: 2807860837486399927}
-  Hinge: {fileID: 2806240073287068853}

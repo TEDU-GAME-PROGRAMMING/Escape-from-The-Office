@@ -36,23 +36,16 @@ public class SelectionManager : MonoBehaviour
                 {
                     interact.SetActive(true);
                     keyboardButtonParent.SetActive(true);
-                    interactTextMesh.text = $"Hold down [E] to pick up <color=\"red\"><b>{inventoryItem.item.itemName}</b></color>";
+                    interactTextMesh.text = $"Press [E] to pick up <color=\"red\"><b>{inventoryItem.item.itemName}</b></color>";
                     keyboardButtonName.text = "E";
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        IncrementProgress(collectDuration);
-                        if (isFinished)
-                        {
-                            inventory.AddItem(inventoryItem);
-                            isFinished = false;
-                        }
+                        inventory.AddItem(inventoryItem);
+                        interact.SetActive(true);
+                        keyboardButtonParent.SetActive(true);
                     }
-                    else
-                    {
-                        currentTimeElapsed = 0f;
-                    }
-                    updateProgressImage(collectDuration);
+                    
                 }
 
                 if (inventoryItem.item.type == ItemType.Script)
@@ -63,7 +56,7 @@ public class SelectionManager : MonoBehaviour
                     interactTextMesh.text = $"<b>{inventoryItem.item.description}</b>";
                    
                 }
-               
+
             }
 
             if (selection.GetComponent<Lever>() != null)
@@ -140,7 +133,41 @@ public class SelectionManager : MonoBehaviour
                     }
                     updateProgressImage(interactDuration);
                 }
-                
+
+                if (DoorObject.GetComponent<DoorHandler>().GetDoorType().Equals("Key") && !selection.GetComponent<DoorHandler>().isOpened)
+                {
+
+                    if(String.Equals(inventory.selectedItem.item.itemName, DoorObject.GetComponent<DoorHandler>().DoorColor))
+                    {
+                        interact.SetActive(true);
+                        keyboardButtonParent.SetActive(true);
+                        interactTextMesh.text = "Hold down [E] to <color=\"red\"><b>unlock</b></color>";
+                        keyboardButtonName.text = "E";
+
+                        if (Input.GetKey(KeyCode.E))
+                        {
+                            IncrementProgress(interactDuration);
+                            Debug.Log("E basýlý");
+                            if (isFinished)
+                            {
+                                DoorObject.GetComponent<DoorHandler>().OpeningDoor();
+                                DoorObject.GetComponent<DoorHandler>().isOpened = true;
+
+                                isFinished = false;
+                          
+                            }
+
+                        }
+                        else
+                        {
+                            currentTimeElapsed = 0f;
+                        }
+                        updateProgressImage(interactDuration);
+                    }
+                    
+                }
+
+
             }
 
         }
