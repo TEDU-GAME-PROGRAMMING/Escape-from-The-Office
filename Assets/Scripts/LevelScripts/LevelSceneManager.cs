@@ -60,7 +60,7 @@ public class LevelSceneManager : MonoBehaviour
         if (timeToPass <= 0)
         {
             levelFailed = true;
-            FindObjectOfType<TrapAudioManager>().PlayEffect(0);//0:BOMB 1:BLADE 2:SPIKE 3:LASER
+            FindObjectOfType<TrapAudioManager>().PlayEffect(4);//0:PAPER 1:BLADE 2:SPIKE 3:LASER
             WaitForSound();
             HandleLose(0);
         }
